@@ -51,7 +51,7 @@ module.exports = [
       {
   "type": "input",
   "messageKey": "email",
-  "defaultValue": "",
+  "defaultValue": "https://cgm.herokuapp.com",
   "label": "Nightscout Website",
   "attributes": {
     "placeholder": "eg: https://yourname.azurewebsites.net",
