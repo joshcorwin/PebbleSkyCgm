@@ -151,8 +151,7 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
           console.log("Pump Dat: "+ pumpdat);
 					var pumpres = (loopn.pump.pump.reservoir + "u");
           console.log("Pump Res: "+ pumpres);
-					console.log("Pump Bat: "+ pumpbat);
-					opts.Pump = ("Bat:" + pumpbat + " " + "Res:" + pumpres + " " + pumpdat);
+					opts.Pump = ("Res:" + pumpres + " " + pumpdat);
 				}
 				/*if ((loopn.iob.display === null)) {
 				    opts.iob = "null";
