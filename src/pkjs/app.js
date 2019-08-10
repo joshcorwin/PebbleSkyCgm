@@ -293,14 +293,14 @@ function nightscout(opts) {
 						lastPredicted = opts.lastPredicted,
             loopPump = opts.Pump,
 						// get battery level
-						currentBattery = responsebgs[0].battery,
-						//currentBattery = "100",
+						//currentBattery = responsebgs[0].battery,
+						currentBattery = "100",
 						// get NameofT1DPerson and IOB
 						NameofT1DPerson = opts.t1name,
 						currentIOB = responsebgs[0].iob,
 						// sensor fields
-						currentCalcRaw = 0,
-						//currentCalcRaw = 100000,
+						//currentCalcRaw = 0,
+						currentCalcRaw = 100000,
 						formatCalcRaw = " ",
 						currentRawFilt = responsebgs[0].filtered,
 						formatRawFilt = " ",
