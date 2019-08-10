@@ -154,7 +154,7 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 					        var volt = loopn.pump.pump.battery.voltage;
                   pumpbat = 100 + "v";
                   }  
-					var pumpres = (loopn.pump.pump.reservoir + "u");
+					var pumpres = (50 + "u");
           console.log("Pump Res: "+pumpres);
 					var pumpdat = loopn.pump.data.clock.display;
           console.log("Pump Dat: "+ pumpdat);
