@@ -146,13 +146,12 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 				if ((loopn.pump.pump === undefined)) {
 					    opts.Pump = "No Data Available";
 					    opts.Raw = " ";
-				} else {
-				       
-					var pumpres = (loopn.pump.pump.reservoir + "u");
-          console.log("Pump Res: "+pumpres);
+				} else {				       
 					var pumpdat = loopn.pump.data.clock.display;
           console.log("Pump Dat: "+ pumpdat);
-          console.log("Pump Bat: "+ pumpbat);
+					var pumpres = (loopn.pump.pump.reservoir + "u");
+          console.log("Pump Res: "+ pumpres);
+					console.log("Pump Bat: "+ pumpbat);
 					opts.Pump = ("Bat:" + pumpbat + " " + "Res:" + pumpres + " " + pumpdat);
 				}
 				/*if ((loopn.iob.display === null)) {
