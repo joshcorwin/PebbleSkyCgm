@@ -146,12 +146,18 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 				if ((loopn.pump.pump === undefined)) {
 					    opts.Pump = "No Data Available";
 					    opts.Raw = " ";
-				} else {				       
+				} else {
+              if (loopn.pump.pump.battery.voltage === undefined){
+					        var pumpbat = "100%"; 
+                                }else{
+					        var volt = "9v";
+                  }  
+					var pumpres = (loopn.pump.pump.reservoir + "u");
+          console.log("Pump Res: "+pumpres);
 					var pumpdat = loopn.pump.data.clock.display;
           console.log("Pump Dat: "+ pumpdat);
-					var pumpres = (loopn.pump.pump.reservoir + "u");
-          console.log("Pump Res: "+ pumpres);
-					opts.Pump = ("Res:" + pumpres + " " + pumpdat);
+          console.log("Pump Bat: "+ pumpbat);
+					opts.Pump = ("Bat:" + pumpbat + " " + "Res:" + pumpres + " " + pumpdat);
 				}
 				/*if ((loopn.iob.display === null)) {
 				    opts.iob = "null";
