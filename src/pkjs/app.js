@@ -149,12 +149,12 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 				} else {
               if (loopn.pump.pump.battery.voltage === undefined){
 					        var pumpbat = loopn.pump.pump.battery.percent; 
-                  pumpbat = 100 + "%";
+                  pumpbat = "100%";
               }else{
 					        var volt = loopn.pump.pump.battery.voltage;
-                  pumpbat = 100 + "v";
+                  pumpbat = "100v";
                   }  
-					var pumpres = (50 + "u");
+					var pumpres = (loopn.pump.pump.reservoir + "u");
           console.log("Pump Res: "+pumpres);
 					var pumpdat = loopn.pump.data.clock.display;
           console.log("Pump Dat: "+ pumpdat);
