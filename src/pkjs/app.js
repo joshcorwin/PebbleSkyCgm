@@ -146,7 +146,7 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 				if ((loopn.pump.pump === undefined)) {
 					    opts.Pump = "No Data Available";
 					    opts.Raw = " ";
-				} else
+				} else{
               
 			        var pumpbat = loopn.pump.data.clock.display; 
               			var pumpres = (loopn.pump.pump.reservoir + "u");
