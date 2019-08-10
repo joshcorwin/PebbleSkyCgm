@@ -146,15 +146,10 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 				if ((loopn.pump.pump === undefined)) {
 					    opts.Pump = "No Data Available";
 					    opts.Raw = " ";
-				} else {
-              if (loopn.pump.pump.battery.voltage === undefined){
-					        var pumpbat = loopn.pump.pump.battery.percent; 
-                  pumpbat = pumpbat + "%";
-              }else{
-					        var volt = loopn.pump.pump.reservoir;
-                  pumpbat = volt + "v";
-                  }  
-					var pumpres = (loopn.pump.pump.reservoir + "u");
+				} else
+              
+			        var pumpbat = loopn.pump.data.clock.display; 
+              			var pumpres = (loopn.pump.pump.reservoir + "u");
           console.log("Pump Res: "+pumpres);
 					var pumpdat = loopn.pump.data.clock.display;
           console.log("Pump Dat: "+ pumpdat);
