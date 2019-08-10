@@ -151,7 +151,7 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 					        var pumpbat = loopn.pump.pump.battery.percent; 
                   pumpbat = pumpbat + "%";
               }else{
-					        var volt = loopn.pump.pump.battery.voltage;
+					        var volt = loopn.pump.pump.reservoir;
                   pumpbat = volt + "v";
                   }  
 					var pumpres = (loopn.pump.pump.reservoir + "u");
