@@ -159,7 +159,7 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 					var pumpdat = loopn.pump.data.clock.display;
           console.log("Pump Dat: "+ pumpdat);
           console.log("Pump Bat: "+ pumpbat);
-					opts.Pump = ("Bat:" + pumpbat + " " + "Res:" + pumpres + " " + pumpdat);
+					opts.Pump = ("Res:" + pumpres + " " + pumpdat);
 				}
 				/*if ((loopn.iob.display === null)) {
 				    opts.iob = "null";
