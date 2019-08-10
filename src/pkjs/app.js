@@ -148,13 +148,13 @@ console.log("opts.Last " + opts.Last + "opts.LoopTime" + opts.LoopTime);
 					    opts.Raw = " ";
 				} else{
               
-			        var pumpbat = loopn.pump.data.clock.display; 
+			        var pumpbat = "5v"; 
               			var pumpres = (loopn.pump.pump.reservoir + "u");
           console.log("Pump Res: "+pumpres);
 					var pumpdat = loopn.pump.data.clock.display;
           console.log("Pump Dat: "+ pumpdat);
           console.log("Pump Bat: "+ pumpbat);
-					opts.Pump = ("Res:" + pumpres + " " + pumpdat);
+					opts.Pump = ("Bat:" + pumpbat + "Res:" + pumpres + " " + pumpdat);
 				}
 				/*if ((loopn.iob.display === null)) {
 				    opts.iob = "null";
