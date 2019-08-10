@@ -2,12 +2,12 @@
     "author": "Dexterity",
     "dependencies": {},
     "keywords": [],
-    "name": "skyloop",
+    "name": "joshskyloop",
     "pebble": {
         "capabilities": [
             "configurable"
         ],
-        "displayName": "Sky Line Loop",
+        "displayName": "joshskylooptest",
         "enableMultiJS": true,
         "messageKeys": {
             "basal": 13,
